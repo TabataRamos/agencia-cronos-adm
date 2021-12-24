@@ -55,3 +55,48 @@ table img {
     width: 220px;
     border: 1px solid #ccc;
 }
+
+.back-modal {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    display: block;
+    visibility: hidden;
+}
+
+.janela {
+    height: 55%;
+    width: 60%;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 80px auto 0 auto;
+    padding: 20px;
+}
+
+.janela span {
+    float: right;
+    font-size: 40px;
+    margin-right: 5px;    
+    cursor: pointer;
+}
+
+.janela span:hover {
+    color: #990000;
+}
+
+form ul {
+    list-style: none;
+}
+
+form input, textarea {
+    width: 70%;
+}
+
+#cadastrarCurso {
+    float: right;
+    margin-right: 5px;    
+    cursor: pointer;
+}
