@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/estilo.css" />
-  <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon" />
 </head>
 
 <body>
@@ -29,7 +28,7 @@
 
           <h3>Serviços</h3>
           <button class="btn btn-primary" id="open-modal" onclick="abrirModal()">Adicionar novo</button>
-          <table class="table my-5">
+          <table id="tableCurso" class="table my-5">
             <thead>
               <tr>
                 <td>Nome</td>
@@ -66,6 +65,8 @@
                   <button class="btn btn-danger m-1">excluir</button>
                 </td>
               </tr>
+            <tbody id="corpo">
+            </tbody>
             </tbody>
           </table>
         </div>
@@ -76,7 +77,7 @@
     <div class="container text-center">
       <p class="m-0">
         copyright 2021
-        <img src="imagens/favicon.png" width="30" alt="" /> agência CRONOS
+        agência CRONOS
       </p>
     </div>
   </footer>
@@ -86,15 +87,15 @@
       <span class="close" onclick="fecharModal()">&times;</span>
       <div>
         <h1>Informações sobre o Curso!</h1>
-        <form action="">
+        <form id="form" class="modal-field">
           <ul>
-            <li><label for="">Nome do curso:</label></li>
-            <input type="text">
-            <li><label for="">Descrição:</label></li>
-            <textarea name="" id="" cols="60" rows="5"></textarea>
-            <li><input type="file" accept="image/*"></li>
+            <li><label>Nome do curso:</label></li>
+            <input type="text" class="modal-field" id="nome" data-index="new">
+            <li><label>Descrição:</label></li>
+            <textarea id="descricao" cols="60" rows="5" class="modal-field"></textarea>
+            <li><input type="file" id="imagem" accept="image/*" class="modal-field"></li>
           </ul>
-          <button class="btn btn-primary" id="cadastrarCurso">Confirmar</button>
+          <button class="btn btn-primary" id="salvar">Confirmar</button>
         </form>
       </div>
     </div>
