@@ -72,10 +72,16 @@ const createRow = (curso) => {
     <td>${curso.descricao}</td>
     <td>
       <button class="btn btn-secondary m-1">editar</button>
-      <button class="btn btn-danger m-1">excluir</button>
+      <button class="btn btn-danger m-1" onclick="funcaoDeletar()">excluir</button>
     </td>
     `
     document.querySelector('#tableCurso>#corpo').appendChild(newRow)
+}
+
+const funcaoDeletar = function(evento){
+    const botaoDeleta = evento.target
+    const tarefaDeletada = botaoDeleta.parentElement
+    tarefaDeletada.remove()
 }
 
 
