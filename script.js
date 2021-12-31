@@ -71,17 +71,34 @@ const createRow = (curso) => {
     <td><img class="img-fluid" src="${curso.imagem}" alt="Ilustração"></td>
     <td>${curso.descricao}</td>
     <td>
-      <button class="btn btn-secondary m-1">editar</button>
-      <button class="btn btn-danger m-1" onclick="funcaoDeletar()">excluir</button>
+
+
     </td>
     `
+    const BotaoEditar = function(){
+        const botaoEdita = document.createElement('button')
+        botaoEdita.innerText = "Editar"
+        botaoEdita.classList.add("btn1")
+        //botaoDeleta.addEventListener('click', funcaoEditar)
+    
+        return botaoEdita
+    }
+    const BotaoDeleta = function(){
+        const botaoDeleta = document.createElement('button')
+        botaoDeleta.innerText = "Excluir"
+        botaoDeleta.classList.add("btn2")
+        botaoDeleta.addEventListener('click', funcaoDeletar)
+    
+        return botaoDeleta
+    }
+    const funcaoDeletar = function(evento){
+        const botaoDeleta = evento.target
+        const tarefaDeletada = botaoDeleta.parentElement
+        tarefaDeletada.remove()
+    }
+    newRow.appendChild(BotaoEditar())
+    newRow.appendChild(BotaoDeleta())
     document.querySelector('#tableCurso>#corpo').appendChild(newRow)
-}
-
-const funcaoDeletar = function(evento){
-    const botaoDeleta = evento.target
-    const tarefaDeletada = botaoDeleta.parentElement
-    tarefaDeletada.remove()
 }
 
 

@@ -100,3 +100,17 @@ form input, textarea {
     margin-right: 5px;    
     cursor: pointer;
 }
+.btn1{
+    background-color: rgb(127, 127, 230);
+    border-color: #0a0606;
+    color: white;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.btn2{
+    background-color: #e22d15;
+    border-color: #e22d15;
+    color: white;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
