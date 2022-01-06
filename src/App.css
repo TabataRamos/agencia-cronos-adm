@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header img {
+  width: 200px;
+  margin: 0 auto;
+}
+
+header {
+  position: relative;
+  background-color: #0097A7;
+  text-align: center;
+  box-shadow: 0px 4px 4px 2px rgb(0 0 0 / 14%);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  color: #fff !important;
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  color: #0097A7;
+
+}
+
+h3 {
+  font-size: 25px;
+  margin: 30px 0;
+}
+
+.btn.btn-primary {
+  background-color: #0097A7;
+  border-color: #0097A7;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+table img {
+  width: 220px;
+  border: 1px solid #ccc;
+}
+
+.back-modal {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: block;
+  visibility: hidden;
+}
+
+.janela {
+  height: 55%;
+  width: 60%;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 80px auto 0 auto;
+  padding: 20px;
+}
+
+.janela span {
+  float: right;
+  font-size: 40px;
+  margin-right: 5px;    
+  cursor: pointer;
+}
+
+.janela span:hover {
+  color: #990000;
+}
+
+form ul {
+  list-style: none;
+}
+
+form input, textarea {
+  width: 70%;
+}
+
+#cadastrarCurso {
+  float: right;
+  margin-right: 5px;    
+  cursor: pointer;
+}
+/* .btn1{
+  background-color: rgb(127, 127, 230);
+  border-color: #0a0606;
+  color: white;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.btn2{
+  background-color: #e22d15;
+  border-color: #e22d15;
+  color: white;
+  text-transform: uppercase;
+  margin: 10px 0;
+} */
