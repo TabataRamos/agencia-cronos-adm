@@ -12,6 +12,8 @@ a base e fazer ajustes mínimos, focando mais na parte de funcionalidades e dina
 
 ![adicionarNovo](https://user-images.githubusercontent.com/90721193/148301537-595a15f7-8a73-4060-b31d-6cee4176133b.png)
 
+<p>Segue o Modal</p>
+![fotoMOdal](https://user-images.githubusercontent.com/90721193/148470978-6bc31951-6880-4cf6-9fd2-d408cde995f2.jpg)
 
 <h3>Editar</h3>
 <p>Quando é clicado o usuário tem a capacidade de fazer alterações nos dados salvos</p>
